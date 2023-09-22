@@ -1,0 +1,38 @@
+<?php 
+include('db_connexion.php');
+    if (isset($_POST['login']) && isset($_POST['mdp'])){
+        $login= $_POST['login'];
+        $mdp =$_POST['mdp'];
+
+        if(empty($login)){
+            header("location: login.php?error= identifiant manquant");
+            exit();
+
+        }else if (empty($mdp)){
+            header("location: login.php?error= mot de passe manquant");
+            exit();
+        }else{
+            $sql ="SELECT * FROM user WHERE login ='$login' AND  mdp = '$mdp'";
+            $result= mysqli_query($conn,$sql);
+            if(mysqli_num_rows($result)===1){
+                $row =mysqli_fetch_assoc($result);
+                //print_r($row);    --> verification de la prise d'information 
+
+                if($row['login']== $login && $row['mdp']== $mdp){
+                    echo( "connexion établit");
+                } else{
+                    header("location: login.php?error= identifiant ou mot de passe incorecte !");
+                    exit();
+                }
+            }
+            else{
+                header("location: login.php?error= identifiant ou mot de passe inccorecte !");
+                exit();
+            }
+        }}
+    else{
+        header("location:index.php");
+        exit();
+    }
+    
+?>
