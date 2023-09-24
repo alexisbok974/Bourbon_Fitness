@@ -27,8 +27,8 @@
         <?php
         // Configuration de la connexion à la base de données
         $serveur = "localhost";
-        $utilisateur = "btssio";
-        $motDePasse = "btssio";
+        $utilisateur = "root";
+        $motDePasse = "root";
         $baseDeDonnees = "BourbonFitness";
 
         // Connexion à la base de données
