@@ -15,8 +15,8 @@
 
         // ... Code de connexion à la base de données ...
         $serveur = "localhost";
-        $utilisateur = "btssio";
-        $motDePasse = "btssio";
+        $utilisateur = "root";
+        $motDePasse = "root";
         $baseDeDonnees = "BourbonFitness";
 
         $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
