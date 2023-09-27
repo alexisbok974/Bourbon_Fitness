@@ -7,10 +7,10 @@
 
 <!-- Barre de navigation -->
 <div class="navbar">
-    <a href="#">Accueil</a>
-    <a href="trouver-coach.html">Trouver Coach</a>
+    <a href="BourbonFitness.html">Accueil</a>
+    <a href="Coach.php">Trouver Coach</a>
     <a href="a-propos.html">À Propos</a>
-    <a href="mon-compte.html">Mon Compte</a>
+    <a href="login.php">Mon Compte</a>
 </div>
 
 <body>

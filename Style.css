@@ -31,7 +31,7 @@ body {
 .header {
     text-align: center;
     padding: 30px;
-    background-image: url('1.jpg'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-image: url('deadlift.jpg'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
     background-size: cover;
     color: rgb(0, 0, 0);
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Détails du Coach</title>
+    <link rel="stylesheet" href="StyleCoach.css">
 </head>
 
 <body>
