@@ -1,7 +1,34 @@
+h1 {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
 body{
+    display: block;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0;  /* pour éviter les marges */
+    /*background-image: url('running2.jpg');*/
+    background-size: cover; /* Ajuste la taille de l'image pour remplir tout l'élément */
+
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+.divDetailsCoach{
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.688);
+    border: 2px solid #000;
+
+}
+
+
+p{
+    text-align: center;
+    
 }
 
 /* Style de la barre de navigation */
@@ -24,4 +51,36 @@ body{
 .navbar a:hover {
     background-color: #14531a;
     color: rgb(0, 0, 0);
+}
+
+.tableau{
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.688);
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: grey;
+}
+
+th{
+    background-color: rgb(207, 206, 206);
+    padding:20px
+}
+
+td{
+    padding:15px
+}
+tr:nth-child(odd){
+    background-color: rgb(214, 236, 255);
+}
+tr:nth-child(even){
+    background-color: white;
 }
