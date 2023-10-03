@@ -10,7 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     height:100vh;
-    background-image: url('1.jpg');
+    background-image: url('running.jpg');
     background-size: cover; /* Ajuste la taille de l'image pour remplir tout l'élément */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
