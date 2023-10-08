@@ -1,0 +1,45 @@
+<?php
+$chemin = "C:/wamp64/www/Projet/Inscription/Inscription/";
+include($chemin."database.php");
+
+
+if (isset($_POST['bouton-valider'])) {
+    if (!empty($_POST['login']) && !empty($_POST['email']) && !empty($_POST['mdp'])) {
+        $login = htmlspecialchars($_POST['login']);
+        $email = htmlspecialchars($_POST['email']);
+        $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
+
+        if (strlen($_POST['mdp']) < 8) {
+            header("location: Inscription.php?error=Le mot de passe doit contenir au moins 8 caractères");
+        } elseif (strlen($login) > 32) {
+            header("location: Inscription.php?error=Le login ne doit pas dépasser 32 caractères");
+        } elseif (strlen($login) < 8) {
+            header("location: Inscription.php?error=Le login doit contenir au moins 8 caractères");
+        } else {
+            $testmail = $conn->prepare("SELECT * FROM user WHERE email = ?;");
+            $testmail->bind_param("s", $email);
+            $testmail->execute();
+
+            $result = $testmail->get_result();
+            $controlmail = $result->num_rows;
+
+            if ($controlmail == 0) {
+                $insertion = $conn->prepare("INSERT INTO user(login, mdp, email) VALUES (?, ?, ?);");
+                $insertion->bind_param("sss", $login, $mdp, $email);
+                $insertion->execute();
+
+                session_start();
+                $_SESSION['conn'] = "OK";
+                header("location: index.php");
+                exit();
+            } else {
+                header("location: Inscription.php?error=Désolé, votre adresse est déjà utilisée.");
+            }
+        }
+    } else {
+        header("location: Inscription.php?error=Veuillez remplir tous les champs.");
+    }
+} else {
+     //header("location:Inscription.php");
+}
+?>
