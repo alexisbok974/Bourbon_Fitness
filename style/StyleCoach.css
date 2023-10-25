@@ -14,14 +14,14 @@ body{
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
 }
 
-.divDetailsCoach{
+.divDetailsCoach{  
     padding: 10px;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 20px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.688);
-    border: 2px solid #000;
+    background-color: rgba(214, 33, 33, 0.342);
+    /*border: 2px solid #000;*/
 
 }
 
@@ -63,11 +63,15 @@ p{
 }
 
 table{
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    position: static;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 5px;
     border-width: 3px;
     border-color: grey;
+    border-collapse : collapse;
 }
 
 th{
@@ -79,8 +83,8 @@ td{
     padding:15px
 }
 tr:nth-child(odd){
-    background-color: rgb(214, 236, 255);
+    background-color: rgba(76, 187, 42, 0.452);
 }
 tr:nth-child(even){
-    background-color: white;
+    background-color: rgba(191, 206, 52, 0.459);
 }

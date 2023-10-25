@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Détails du Coach</title>
-    <link rel="stylesheet" href="StyleCoach.css">
+    <link rel="stylesheet" href="style/StyleCoach.css">
 </head>
 
 <!-- Barre de navigation -->
@@ -27,8 +27,8 @@
 
             // ... Code de connexion à la base de données ...
             $serveur = "localhost";
-            $utilisateur = "root";
-            $motDePasse = "root";
+            $utilisateur = "Bfitness";
+            $motDePasse = "Fitness25jo";
             $baseDeDonnees = "BourbonFitness";
 
             $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
