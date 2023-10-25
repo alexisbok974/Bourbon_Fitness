@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des Coachs</title>
-    <link rel="stylesheet" href="StyleCoach.css">
+    <link rel="stylesheet" href="style/StyleCoach.css">
 </head>
 
 <!-- Barre de navigation -->
@@ -20,7 +20,7 @@
     
     <div class="tableau">
         <h1>Liste des Coachs</h1>
-        <table border="1" class="styleTab">
+        <table class="styleTab">
             <tr>
                 <th>ID</th>
                 <th>Nom</th>
@@ -32,8 +32,8 @@
             <?php
             // Configuration de la connexion à la base de données
             $serveur = "localhost";
-            $utilisateur = "root";
-            $motDePasse = "root";
+            $utilisateur = "Bfitness";
+            $motDePasse = "Fitness25jo";
             $baseDeDonnees = "BourbonFitness";
 
             // Connexion à la base de données
