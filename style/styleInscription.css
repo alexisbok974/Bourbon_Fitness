@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgba(148, 148, 148, 0.508);
+    position: relative;
+    min-height: 100vh; 
+}
+.slider{
+    height: 50vh;
+    position: relative;
+}
+.slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.slider img.active{
+    opacity: 1;
+}
+.suivant ,.precedent{
+    color: aliceblue;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.suivant{
+    right: 1rem;
+}
+.precedent{
+    left: 1rem;
+}
+.information {
+    position:relative;
+    top: 10px;
+    bottom: 15px; /* Alignez en bas */
+    left: 10px; /* Alignez à gauche */
+    color: rgb(255, 255, 255);
+    background-color: #000000dc;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    max-height: 275px; /* hauteur max pour la zone de defilement  */
+    overflow: auto; /* Activez la zone de défilement quand contenu depasse le max-height */
+   
+}
+.titre {
+    text-align: center; /* Centrer le texte */
+    margin-top: 50px;
+    color: #9b0300;
+}
+.sous_titre{
+    color: #075900;
+}

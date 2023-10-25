@@ -1,0 +1,57 @@
+section{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.721);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    top: 10vh; /* Ajustez la position verticale (20vh est un exemple) */
+    left: 50%; /* Placez-le au centre de l'écran horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement en utilisant transform */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    margin:  5px 0;
+    padding: 5px 5px ;
+    outline: 0px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+form input[type='submit']{
+    background-color: rgb(3, 7, 6);
+    border: 0;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.error{
+    font-size: smaller;
+    color: darkred;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.notice{
+    font-size: x-small;
+    color: rgb(25, 0, 139);
+    margin: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.connexion{
+    font-size: x-small;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href ="style/styleLogin.css">
-    <link rel="stylesheet" href ="style/styleInscription.css">
+    <link rel="stylesheet"href ="style/styleInscription.css">
+    <link rel="stylesheet"href ="style/styleForm.css">
+    <title>Document</title>
 </head>
 <body>
-<div class="slider">
+    <div class="slider">
         <img src="img/1.jpg"alt="img1"class ="img_slider active"/>
         <img src="img/2.jpg"alt="img2"class ="img_slider"/>
         <img src="img/3.jpg"alt="img3"class ="img_slider"/>
@@ -22,19 +22,24 @@
         </div>
     </div>
     <script src="slider.js"></script>
-        
+    <div class="formulaire">
         <section>
-            <form action ="verification.php" method="POST">
+            <form action ="insert.php" method="POST">
                 <?php 
                     if(isset($_GET['error'])){ ?>
                         <p class= "error"> <?php echo $_GET['error']; ?> </p>
                     <?php } ?>
+                
                 <label>Identifiant</label>
-                <input type ="text" name ="login" placeholder="identifiant">
+                <input type ="text" name ="login" minlength="8" maxlength="25" size="32"placeholder="Entrez un identifiant">
+                <label>Email</label>
+                <input type ="email" name ="email" placeholder="Entrez un email">
                 <label>Mot de passe </label>
-                <input type="password" name="mdp" placeholder="Mot de passe">
+                <input type="password" name="mdp" maxlengh =32 minlengh=8 placeholder="Mot de passe">
                 <input type="submit" id="btn" value="Se connecter" name ="bouton-valider">
-                <p class ="connexion">Vous n'avez pas de compte ? <a href="index.php">Inscrivez-vous ici</a></p>
+
+                <p class ="notice"> Notice: le mot de passe doit contenir une majuscule,une minuscule, un chiffre et un caractère spéciale </p>
+                <p class ="connexion">Vous avez un compte ? <a href="login.php">Connectez-vous ici</a></p>
         </section>
     </div>
     <div class="contenu">

@@ -9,7 +9,7 @@
 
 <!-- Barre de navigation -->
 <div class="navbar">
-    <a href="BourbonFitness.html">Accueil</a>
+    <a href="BourbonFitness.php">Accueil</a>
     <a href="Coach.php">Trouver Coach</a>
     <a href="a-propos.html">À Propos</a>
     <a href="login.php">Mon Compte</a>

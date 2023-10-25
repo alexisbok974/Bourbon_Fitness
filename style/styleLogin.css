@@ -1,0 +1,82 @@
+section{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.809);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    top: 15vh; /* Ajustez la position verticale (20vh est un exemple) */
+    left: 50%; /* Placez-le au centre de l'écran horizontalement */
+    transform: translateX(-50%); /* Centrez horizontalement en utilisant transform */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    margin:  5px 0;
+    padding: 5px 5px ;
+    outline: 0px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+form input[type='submit']{
+    background-color: rgb(3, 7, 6);
+    border: 0;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.error{
+    font-size: smaller;
+    color: darkred;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.notice{
+    font-size: x-small;
+    color: rgb(25, 0, 139);
+    margin: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.connexion{
+    font-size: x-small;
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.information {
+    position:relative;
+    top: 10px;
+    bottom: 15px; /* Alignez en bas */
+    left: 10px; /* Alignez à gauche */
+    color: rgb(255, 255, 255);
+    background-color: #000000dc;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    max-height: 275px; /* hauteur max pour la zone de defilement  */
+    overflow: auto; /* Activez la zone de défilement quand contenu depasse le max-height */
+   
+}
+.titre {
+    text-align: center; /* Centrer le texte */
+    margin-top: 50px;
+    color: #9b0300;
+}
+.sous_titre{
+    color: #075900;
+}
