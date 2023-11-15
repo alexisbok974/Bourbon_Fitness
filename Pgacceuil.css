@@ -1,0 +1,150 @@
+* Style de base pour la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #a8038d;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: #140303;
+    color : black;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 22px 16px;
+    text-decoration: none;
+}
+
+/* Style des liens de la barre de navigation au survol */
+.navbar a:hover {
+    background-color: #14531a;
+    color: rgb(0, 0, 0);
+}
+
+/* Style de l'en-tête de la page */
+.header {
+    text-align: center;
+    padding: 120px;
+    background-image: url("11.jpg"); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: cover;
+    color: rgb(27, 4, 4);
+}
+
+/* Ajoutez ces styles à votre fichier CSS existant */
+
+/* Styles pour la section "Les Coachs du moment" */
+.coachs-section {
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    overflow: hidden; /* Empêche le débordement du fond animé */
+}
+
+/* Styles pour le fond animé */
+.dd::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('1.jpg'); /* Remplacez par les noms réels de vos images */
+    background-image: url('11.jpg'); 
+    background-image: url('4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideShow 12s linear infinite; /* Ajustez la durée pour contrôler la vitesse de défilement */
+}
+
+/* Animation pour le fond animé */
+@keyframes slideShow {
+    0%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Styles pour le contenu */
+.coachs-content {
+    position: relative;
+    z-index: 1; /* Assure que le contenu est au-dessus du fond animé */
+}
+
+
+
+/* Le reste de vos styles ... */
+.coachs-section h2 {
+    font-size: 28px;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 20px;
+}
+
+.coachs-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coach {
+    background-color: #db370ecb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(245, 244, 244, 0.87);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid #1f1d17da;
+}
+
+.coach img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.coach h3 {
+    font-size: 24px;
+    color: #333333e7;
+    margin: 10px 0;
+}
+
+
+.coach p {
+    font-size: 18px;
+    color: #eeeeee;
+}
+/* Style de la section des images */
+.image-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.image {
+    display: inline-block;
+    margin: 10px;
+}
+.image1{
+    width: 500px;
+    height: 350px;
+}
+.titre1{
+    color: blanchedalmond;
+}
+.titre2{
+    color: blanchedalmond;
+}
